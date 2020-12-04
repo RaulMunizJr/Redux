@@ -27,5 +27,4 @@ export const sinFunction = () => (dispatch, getState) => {
  }, 2000)
 }
 ```
-
-![](images/filename%20workflow.png)
+<img src="images/workflow.png" width="600"/>
