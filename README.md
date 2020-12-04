@@ -1,5 +1,8 @@
 # Redux
 
+Redux is a predictable state container for JavaScript apps.
+Using Redux, developers can incorporate simplified and centralized approach to state management within the client application. Redux makes it easier to understand and debug applications.
+
 Useful References: https://react-redux.js.org/
 
 Useful Resources:
@@ -28,3 +31,12 @@ export const sinFunction = () => (dispatch, getState) => {
 }
 ```
 <img src="images/workflow.png" width="600"/>
+
+- Changes are initiated with Action objects that describe the change.
+- A Dispatcher sends the action to appropriate store.
+- The Store is responsible for maintaining the application state.
+- When the store updates the data, the View and the screen changes, reflecting the data back to the user.
+- As a Flux application grows, it may include multiple stores and views, but the data flow remains unidirectional.
+
+
+https://redux.js.org/tutorials/fundamentals/part-1-overview
