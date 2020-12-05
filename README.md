@@ -80,7 +80,7 @@ export const sinFunction = () => (dispatch, getState) => {
 > the store runs the reducer function to calculate a new state
 > the UI reads the new state to display the new values
 
-<img src="images/Dataflow1.png" width="200"/> <img src="images/Dataflow2.png" width="200"/> <img src="images/Dataflow3.png" width="200"/>
+<img src="images/Dataflow1.png" width="250"/> <img src="images/Dataflow2.png" width="250"/> <img src="images/Dataflow3.png" width="250"/>
 
 
 
