@@ -47,6 +47,7 @@ export const sinFunction = () => (dispatch, getState) => {
 ```
 
 - State, Actions, and Reducers
+
  1.) Start by defining an initial state value to describe the application:
  ```
  const initialState = {
@@ -79,7 +80,7 @@ export const sinFunction = () => (dispatch, getState) => {
 > the store runs the reducer function to calculate a new state
 > the UI reads the new state to display the new values
 
-<img src="images/dataflow1.png" width="200"/> <img src="images/dataflow2.png" width="200"/> <img src="images/dataflow3.png" width="200"/>
+<img src="images/Dataflow1.png" width="200"/> <img src="images/Dataflow2.png" width="200"/> <img src="images/Dataflow3.png" width="200"/>
 
 
 
