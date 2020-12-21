@@ -83,6 +83,59 @@ export const sinFunction = () => (dispatch, getState) => {
 <img src="images/Dataflow1.png" width="250"/> <img src="images/Dataflow2.png" width="250"/> <img src="images/Dataflow3.png" width="250"/>
 
 
+### State Management
+```
+function Counter() {
+  // State: a counter value
+  const [counter, setCounter] = useState(0)
+
+  // Action: code that causes an update to the state when something happens
+  const increment = () => {
+    setCounter(prevCounter => prevCounter + 1)
+  }
+
+  // View: the UI definition
+  return (
+    <div>
+      Value: {counter} <button onClick={increment}>Increment</button>
+    </div>
+  )
+}
+```
+> The state, the source of truth that drives the app;
+> The view, a declarative description of the UI based on the current state
+> The actions, the events that occur in the app based on user input, and trigger updates in the state
+
+```
+const obj = {
+  a: {
+    // To safely update obj.a.c, we have to copy each piece
+    c: 3
+  },
+  b: 2
+}
+
+const obj2 = {
+  // copy obj
+  ...obj,
+  // overwrite a
+  a: {
+    // copy obj.a
+    ...obj.a,
+    // overwrite c
+    c: 42
+  }
+}
+
+const arr = ['a', 'b']
+// Create a new copy of arr, with "c" appended to the end
+const arr2 = arr.concat('c')
+
+// or, we can make a copy of the original array:
+const arr3 = arr.slice()
+// and mutate the copy:
+arr3.push('c')
+```
 
 
 
